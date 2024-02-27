@@ -49,7 +49,7 @@ export class Usuario extends Entity {
     type: 'string',
     required: true,
   })
-  clave: string;
+  clave?: string;
 
   @hasMany(() => Login)
   logins: Login[];
